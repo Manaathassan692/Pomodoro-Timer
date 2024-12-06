@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  background: #1e293b;
+  border-radius: 20px;
+  padding: 20px 30px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Timer Section */
+.timer {
+  margin: 20px 0;
+  background: #334155;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.timer h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #e2e8f0;
+}
+
+.timer .time {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #38bdf8;
+  margin: 10px 0;
+}
+
+.timer button {
+  background: #0ea5e9;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timer button:hover {
+  background: #0284c7;
+}
+
+/* Task Manager Section */
+.task-manager {
+  margin: 20px 0;
+  background: #334155;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.task-manager h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #e2e8f0;
+  margin-bottom: 10px;
+}
+
+.task-manager ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.task-manager li {
+  padding: 10px;
+  background: #1e293b;
+  color: #f1f5f9;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.task-manager li:hover {
+  background: #0f172a;
+}
+
+.task-manager li.completed {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.task-manager input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+
+.task-manager button {
+  background: #10b981;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.task-manager button:hover {
+  background: #059669;
+}
+
+/* Scrollbar Styling */
+.task-manager ul::-webkit-scrollbar {
+  width: 5px;
+}
+
+.task-manager ul::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 10px;
+}
+
+.task-manager ul::-webkit-scrollbar-track {
+  background: #1e293b;
+}
